@@ -4,9 +4,13 @@ from django.shortcuts import render
 # Create your views here.
 
 
-def f_1(request):
+def starting_page(request):
     return HttpResponse("main page")
 
 
-def f_2(request):
+def posts(request):
     return HttpResponse("list of posts")
+
+
+def post_detail(request):
+    return HttpResponse("slug passed")

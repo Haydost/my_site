@@ -1,6 +1,7 @@
 from django.urls import path
 from . import views
 urlpatterns = [
-    path("", views.f_1, name="home"),
-    path("posts/", views.f_2)
+    path("", views.starting_page, name="starting-page"),
+    path("posts/", views.posts, name="posts_page"),
+    path("posts/<slug:slug>", views.post_detail, name="post-detail-page")
 ]
