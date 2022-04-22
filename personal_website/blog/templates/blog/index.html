@@ -1,7 +1,11 @@
 {% extends "base.html" %}
+{% load static %}
 {% block title %}
     Haydo's Blog
 {% endblock title %}
+{% block CSS_files %}
+    <link rel="stylesheet" href="{% static "blog/index.css" %}"/>
+{% endblock CSS_files %}
 {% block content %}
     <header id="main-navigation">
         <h1>
@@ -20,7 +24,7 @@
             Hi, I am Haydo I love to blog about AI/ML world!
         </p>
     </section>
-    <section id="lates-posts">
+    <section id="latest-posts">
         <h2>My later Thoughts</h2>
         <ul>
             <li>
